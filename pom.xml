@@ -4,7 +4,7 @@
 
     <groupId>io.github.hairmare</groupId>
     <artifactId>keycloak-extension-openbao-parent</artifactId>
-    <version>0.0.0-SNAPSHOT</version>
+    <version>0</version>
     <packaging>pom</packaging>
 
     <name>Keycloak Extension OpenBao - Parent</name>
@@ -57,6 +57,7 @@
                     <version>${surefire-plugin.version}</version>
                     <configuration>
                         <systemPropertyVariables>
+                            <quarkus.bootstrap.effective-model-builder>true</quarkus.bootstrap.effective-model-builder>
                             <java.util.logging.manager>org.jboss.logmanager.LogManager</java.util.logging.manager>
                             <maven.home>${maven.home}</maven.home>
                             <maven.repo>${settings.localRepository}</maven.repo>
@@ -68,6 +69,7 @@
                     <version>${failsafe-plugin.version}</version>
                     <configuration>
                         <systemPropertyVariables>
+                            <quarkus.bootstrap.effective-model-builder>true</quarkus.bootstrap.effective-model-builder>
                             <java.util.logging.manager>org.jboss.logmanager.LogManager</java.util.logging.manager>
                             <maven.home>${maven.home}</maven.home>
                             <maven.repo>${settings.localRepository}</maven.repo>
