@@ -1,0 +1,11 @@
+name: Keycloak Extension OpenBao
+description: Keycloak Vault SPI provider backed by OpenBao KV v2.
+metadata:
+  keywords:
+    - keycloak
+    - vault
+    - openbao
+    - secrets
+  categories:
+    - "security"
+  status: "preview"
